@@ -1,0 +1,26 @@
+.file-upload-input {
+ 	width: 0.1px;
+ 	height: 0.1px;
+ 	opacity: 0;
+ 	overflow: hidden;
+ 	position: absolute;
+ 	z-index: -1;
+}
+.file-upload-button {
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  margin-left: -15px;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  word-break: break-word;
+  text-transform: none;
+}
+.file-upload-button > .fa {
+  margin-right: 3px;
+}
+.file-upload-input:focus + .file-upload-button {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}

@@ -1,0 +1,204 @@
+@import "~bulma/bulma";
+@import "lato";
+@import "~font-awesome/css/font-awesome.css";
+@import "venobox";
+@import "./_variables";
+@import "./_colors";
+@import "./typography";
+@import "spinner";
+@import "file_upload";
+@import "modal_form";
+
+$font-stack: Lato, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+html, body, input, textarea {
+  font-family: $font-stack;
+  font-size: 14px;
+  -webkit-font-smoothing: auto;
+}
+
+a.icon-link {
+  color: #aaa;
+}
+a.icon-link:hover {
+  color: #3273dc;
+}
+a.icon-link-delete:hover {
+  color: #ff3860;
+}
+
+.label {
+  font-weight: 400;
+}
+
+#view {
+  margin: 4rem 3rem 0 10rem;
+}
+
+
+.title {
+  font-weight: 300;
+}
+.title.is-primary {
+  color: #00d1b2;
+}
+.title.is-danger {
+  color: #ff3860;
+}
+
+
+
+.inline-group,
+.inline-association-group {
+  padding: 10px 0 70px 0;
+}
+.inline-association-group {
+  margin-left: -2rem;
+}
+
+.inline-group-headline {
+  border-bottom: 1px solid #e4e3e3;
+  margin-bottom: 2rem;
+}
+.inline-group-headline-text,
+.inline-group-headline-text-only {
+  display: inline;
+  background: #fff;
+  padding-right: 20px;
+  text-transform: uppercase;
+  font-size: .7rem;
+  letter-spacing: .1rem;
+  color: #bbb;
+}
+.inline-group-headline-empty {
+  display: inline;
+  background: #fff;
+}
+
+.inline-add-button,
+.inline-edit-button,
+.media-button {
+  outline: none;
+  cursor: pointer;
+}
+
+.inline-add-button.deactivate,
+.inline-edit-button.deactivate,
+a.deactivate,
+button.deactivate,
+input.deactivate,
+label.deactivate {
+  pointer-events: none;
+  cursor: default;
+  color: #ddd !important;
+}
+
+.inline-add-button {
+  display: inline;
+  line-height: 0;
+  background: #fff;
+  padding: 4px 4px 4px 5px;
+  margin-left: -3px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.inline-add-button,
+.inline-add-button:hover {
+  text-decoration: none;
+}
+
+.inline-add-button .fa {
+  color: #ccc;
+  line-height: 0;
+  opacity: 0;
+  transition: opacity .15s ease-out;
+}
+.inline-add-button:hover > .fa {
+  color: #00d1b2;
+}
+.inline-association-group:hover .inline-add-button > .fa {
+  opacity: 1;
+}
+
+
+.inline-edit-button {
+  opacity: 0;
+  transition: opacity .15s ease-out;
+  position: absolute;
+  top: -4px;
+  left: -33px;
+  display: block;
+  color: #ccc;
+  padding: 4px 6px 4px 5px;
+}
+.inline-edit-button:hover {
+  color: #00d1b2;
+}
+.inline-edit-button,
+.inline-edit-button:hover {
+  text-decoration: none;
+}
+.inline-group:hover .inline-edit-button,
+.inline-association-group:hover .inline-edit-button,
+.inline-headline:hover .inline-edit-button {
+  opacity: 1;
+}
+.inline-value .inline-edit-button {
+  top: -4px;
+  left: -41px;
+}
+
+.inline-association-icon {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .15s ease-out;
+  position: absolute;
+  top: 0;
+  left: -33px;
+  display: block;
+  color: #ccc;
+  padding: 4px 5px;
+}
+.inline-association-icon:hover {
+  color: #00d1b2;
+}
+
+.inline-group:hover .inline-association-icon,
+.inline-association-group:hover .inline-association-icon,
+.inline-headline:hover .inline-association-icon {
+  opacity: 1;
+}
+
+
+.activity-video {
+  cursor: pointer;
+}
+.activity-video-icon {
+  position: absolute;
+  margin: 30px auto 0;
+  left: -7px;
+  right: 0;
+  color: rgba(255, 255, 255, .75);
+  pointer-events: none;
+}
+
+
+.inline-value {
+  margin: 0px 0 1rem 10px;
+  position: relative;
+}
+.inline-value-text {
+  display: inline-block;
+  padding: 2px 0;
+  word-wrap: break-word;
+}
+
+.inline-association--empty-state,
+.inline-value-text--empty-state {
+  color: #bbb;
+  font-weight: 300;
+}
+.inline-association--error-state {
+  color: #ff3860;
+  font-weight: 300;
+}
